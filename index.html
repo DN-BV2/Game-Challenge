@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asteroids (Mini)</title>
+  <style>
+    html, body { margin:0; height:100%; background:#0b0f1a; color:#fff; font-family:system-ui, sans-serif; }
+    .wrap { display:flex; flex-direction:column; align-items:center; gap:10px; padding:14px; }
+    canvas { background:#050814; border:1px solid rgba(255,255,255,.15); border-radius:12px; }
+    .hint { opacity:.85; font-size:14px; text-align:center; line-height:1.4; max-width:820px; }
+    kbd { background:rgba(255,255,255,.12); padding:2px 6px; border-radius:6px; border:1px solid rgba(255,255,255,.18); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Asteroids (Mini)</h2>
+    <div class="hint">
+      Steuern: <kbd>←</kbd> <kbd>→</kbd> drehen · <kbd>↑</kbd> Schub · <kbd>Space</kbd> schiessen · <kbd>R</kbd> Neustart<br/>
+      Ziel: Asteroiden abschiessen, nicht kollidieren 🙂
+    </div>
+    <canvas id="c" width="900" height="520"></canvas>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
